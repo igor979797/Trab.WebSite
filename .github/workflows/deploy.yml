@@ -19,6 +19,7 @@ jobs:
           publish_branch: gh-pages
           user_name: igor979797
           user_email: igor.18demail@gmail.com
+          force_orphan: true
 
 
 
