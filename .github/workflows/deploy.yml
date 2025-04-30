@@ -17,6 +17,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+          user_name: igor979797
+          user_email: igor.18demail@gmail.com
 
 
 
