@@ -1,8 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    color: #0d6efd;
-  }
-  
+.navbar .navbar-brand {
+  text-align: center;
+}
+
+.navbar .dropdown-menu {
+  background-color: #007bff;
+}
+
+.navbar .dropdown-item {
+  color: white;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #0056b3;
+}

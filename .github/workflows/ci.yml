@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master  # Ou a branch que você usa
+      - master 
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Versão 3 do checkout
+      uses: actions/checkout@v3  
 
     - name: Set up .NET
       uses: actions/setup-dotnet@v1
@@ -30,5 +30,5 @@ jobs:
     - name: Push changes
       run: git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Usando o token para push
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} 
 

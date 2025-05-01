@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Sobre - Faculdade Exemplo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre - Faculdade Fictícia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar (igual a index.html) -->
+  <!-- Cole exatamente o <nav> aqui igual ao da index.html -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Faculdade Exemplo</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Faculdade Fictícia</a>
+      <span class="position-absolute start-50 translate-middle-x text-white fw-bold d-none d-lg-block">
+        Sobre
+      </span>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cursos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cursos.html">Ver Todos</a></li>
+              <li><a class="dropdown-item" href="cursos.html">Graduação</a></li>
+              <li><a class="dropdown-item" href="#">Pós-graduação</a></li>
+              <li><a class="dropdown-item" href="#">EAD</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container my-5">
+  <!-- Conteúdo -->
+  <main class="container mt-5">
     <h2>Sobre a Faculdade</h2>
-    <p>Somos uma instituição com mais de 20 anos de tradição, focada em formar profissionais de excelência.</p>
-  </div>
+    <p>A Faculdade Fictícia é referência em educação superior com mais de 30 anos de história.</p>
+    <p>Oferecemos cursos modernos, infraestrutura de ponta e um corpo docente altamente qualificado.</p>
+  </main>
 
-  <footer class="bg-dark text-white text-center p-3">
-    © 2025 Faculdade Exemplo
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
