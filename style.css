@@ -15,18 +15,18 @@
 }
 
 table {
-  background-color: #f8f9fa; /* Cor de fundo suave */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-  text-align: center; /* Alinha o texto no centro */
-  padding: 10px; /* Aumenta o espaçamento nas células */
+  text-align: center; 
+  padding: 10px; 
 }
 
 thead {
-  background-color: #007bff; /* Cor de fundo do cabeçalho */
-  color: white; /* Cor do texto no cabeçalho */
+  background-color: #007bff;
+  color: white; 
 }
 
