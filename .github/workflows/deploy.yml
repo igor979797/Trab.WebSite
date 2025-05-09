@@ -14,7 +14,7 @@ jobs:
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: {{ secrets.SONAR_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
           user_name: igor979797
