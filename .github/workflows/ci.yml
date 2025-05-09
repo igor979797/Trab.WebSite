@@ -1,34 +1,28 @@
 name: CI
-
+run-name: Pipeline de integração contínua e analise de código
 on:
   push:
     branches:
-      - master 
+      - main 
 
 jobs:
-  build:
+  ci:
+    name: Build and Analyze
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3  
-
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v1
+    - uses: actions/checkout@v4 
       with:
-        dotnet-version: '8.0'
+        fetch-depth: 0
 
-    - name: Restore dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build
-
-    - name: Run tests
-      run: dotnet test
-
-    - name: Push changes
-      run: git push
+    - uses: SonarSource/sonarqube-scan-action@v5
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} 
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} 
+      with:
+        args: > 
+            -Dsonar.projectKey=Trab.WebSite
+            -Dsonar.projectName=Trab.WebSite
+            -Dsonar.projectVersion=1.0
+            -Dsonar.sources=.
 
