@@ -1,26 +1,3 @@
-name: Deploy para GitHub Pages
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Deploy para GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          user_name: igor979797
-          user_email: igor.18demail@gmail.com
-          force_orphan: true
-
 
 
 
