@@ -1,4 +1,4 @@
-name: continuos-dePloyment
+name: continuos-deployment
 run-name: Deploy do site
 on:
     pull request:
