@@ -52,8 +52,5 @@ jobs:
               with:
                 node-version: '20'
 
-            - name: install packages
-              run: |
-                cd integration-test
 
             
