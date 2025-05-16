@@ -30,3 +30,7 @@ thead {
   color: white; 
 }
 
+.rodape {
+  text-align: center; /* Centraliza o texto dentro do rodapé */
+}
+
