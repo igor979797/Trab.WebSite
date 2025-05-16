@@ -56,5 +56,11 @@ jobs:
             - name: Install packages
               run: npm install
 
+            - name: Iniciar o servidor da aplicação
+               run: npm start &
+      
+            - name: Esperar o servidor subir
+               run: npx wait-on http://127.0.0.1:5500
+
             - name: Run Cypress E2E Test
               run: npx cypress run
