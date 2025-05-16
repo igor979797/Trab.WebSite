@@ -55,10 +55,10 @@ jobs:
             
             - name: Install packages
               run: |
-                cd integration-test
+                cd test-integration
                 npm install
 
             - name: Run Cypress E2E Test
               run: |
-                cd integration-test
+                cd test-integration
                 npx cypress run
