@@ -25,7 +25,8 @@ jobs:
               uses: docker/build-push-action@v6.16.0
               with:
                 context: .
-                file: ./Dockerfile
+                file: ./test-integration/node_modules/getos/tests/...
+
                 push: true
                 tags: igorrafael9/trab-devops:latest
             
