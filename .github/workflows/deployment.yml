@@ -56,5 +56,12 @@ jobs:
             - name: Install packages
               run: npm install
 
+              - name: Start the application on port 55585
+        run: PORT=55585 npm start &
+
+      - name: Wait for app to be ready
+        run: npx wait-on http://localhost:55585
+
+
             - name: Run Cypress E2E Test
               run: npx cypress run
