@@ -1,6 +1,6 @@
 describe('Navegando na tabela de Cursos', () => {
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/graduacao.html')
+        cy.visit('http://localhost:55585/graduacao.html')
     })
 
     it('Deve filtrar curso por nome', () => {
